@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.28.0.schema.json
+PackageIdentifier: VCCcash.Vektkove
+PackageVersion: 1.2.0
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+  - RelativeFilePath: vk.exe
+    PortableCommandAlias: vk
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/didcash385-design/vektkove-files/releases/download/v1.2.0/vektkove-1.2.0-windows-x64.zip
+    InstallerSha256: 70BD33B09054A848EEBF6515F7E7B5DD8EE7F8ECD8FA67E261C6F727DE35C936
+  - Architecture: arm64
+    InstallerUrl: https://github.com/didcash385-design/vektkove-files/releases/download/v1.2.0/vektkove-1.2.0-windows-arm64.zip
+    InstallerSha256: 5C0CC65EFB37B4B32FC9FB77F4662D610A547418BAAEC60248EBA627880C3909
+ManifestType: installer
+ManifestVersion: 1.28.0
